@@ -1,0 +1,68 @@
+/*
+  Package: WordPress
+  Sub package: wp-portfolio
+  Version: 1.0.0
+  Author: Jeevaka
+  Description: Styles for wp-portfolio plugin
+*/
+:root{
+    --portfolio-bg-color: #353535;
+    --portfolio-text-color: #ffffff;
+}
+
+.portfolio-title{
+    position: relative;
+
+}
+.portfolio-title span{
+    background-color: var(--portfolio-bg-color);
+    color: var(--portfolio-text-color);
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+.portfolio-title:before{
+    content: "";
+    position: absolute;
+    height:5px;
+    min-width: 100%;
+    background-color: var(--portfolio-bg-color);
+    display: block;
+    z-index: -1;
+    top:50%;
+    left:0;
+    bottom:0;
+}
+
+.project-info-container{
+    overflow: hidden;
+    cursor: pointer;
+    background-color:  var(--portfolio-bg-color);
+    border: 5px solid var(--portfolio-text-color);
+
+
+}
+.project-info-container img{
+    max-width: 290px;
+    max-height: 190px;
+    height: 100%;
+    width: 100%;
+}
+.project-info-container:hover{
+    transition: border-color 1s;
+    border-color: var(--highlights-bg-and_text-color);
+}
+
+.project-info-container:hover .project-title{
+    opacity: 0;
+}
+.project-info-container .project-title{
+   
+    bottom: 0;
+    transition: opacity 1s;
+    opacity: 1;
+    background-color: #151515;
+    color: var(--portfolio-text-color);
+}
+
+
