@@ -1,0 +1,13 @@
+/*
+Single post styles
+*/
+
+.post-featured-image {
+    width: 100%;
+    min-width: 100px;
+    max-width: 400px;
+    height: auto;
+}
+.post-content{
+    line-height: 18pt;
+}

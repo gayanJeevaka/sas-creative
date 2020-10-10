@@ -1,0 +1,139 @@
+/*
+  Package: WordPress
+  Sub package: sas-creative
+  Version: 1.0.0
+  Author: Jeevaka
+  Description: Common Styles
+*/
+:root{
+
+    --header-bg-color: #2C1468;
+    --header-text-color:  #ffffff;
+    --body-bg-color: #19153F;
+    --footer-bg-color: #333333;
+    --footer-copyright-bg-color: #2B2B2B;
+    --highlights-bg-and_text-color: #74C48E;
+    --headings-text-color: #ffffff;
+    --content-text-color: #989898;
+    --theme-btn-text-color:#ffffff;
+
+    --theme-font-family: "Times New Roman", "Bitstream Charter", Times, serif;
+    --text-line-height: 2em;
+
+}
+
+
+/* Theme Common styles ======================================================= */
+body{
+    background-color: var(--body-bg-color) !important;
+    font-family: var(--theme-font-family);
+}
+
+.text-line-height{
+    line-height: var(--text-line-height);
+}
+.content-overflow-hidden{
+    overflow: hidden !important;
+}
+.text-headings-color{
+    color: var(--headings-text-color) !important;
+    letter-spacing: 1px;
+}
+.text-highlights-color{
+    color: var(--highlights-bg-and_text-color) !important;
+}
+.bg-highlights-color{
+    background-color: var(--highlights-bg-and_text-color);
+}
+.text-content-color{
+color: var(--content-text-color);
+}
+button.btn-normal, a.btn-normal{
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: var(--highlights-bg-and_text-color);
+    color: var(--theme-btn-text-color);
+    border-radius: 10px;
+    padding: 5px 15px;
+    cursor: pointer;
+    border: none;
+    font-size: 0.95em;
+    outline: none;
+}
+.btn-normal:hover{
+    opacity: 0.85;
+}
+.btn-normal:focus{
+    transform: scale(0.95);
+}
+/* ## Theme Common styles ======================================================= */
+
+
+
+/* header and footer menu ============================================*/
+#header, #divNavMenuStatic {
+    background-color: var(--header-bg-color);
+}
+
+header .menu-item a{
+    text-transform: uppercase;
+    margin: 0 1px;
+    padding: 10px 20px !important;
+    color: var(--header-text-color) !important;
+    font-weight: bold;
+}
+
+header .current-menu-item > a, header .menu-item a:hover {
+     background-color: var(--highlights-bg-and_text-color) !important;
+     border-radius: 10px;
+ }
+
+.footer-container{
+    background-color: var(--footer-bg-color);
+    color: var(--content-text-color);
+}
+.footer-menu-items {
+    font-size: 0.9em;
+    display: block;
+    padding: 0;
+    list-style: none;
+    font-weight: normal;
+}
+
+.footer-menu-items .menu-item > a{
+    padding: 5px;
+    color: var(--highlights-bg-and_text-color);
+    border-bottom: 1px solid rgba(168,168,168,0.53);
+}
+.footer-menu-items .menu-item > a:before{
+    content: "\00BB  ";
+}
+.footer-menu-items .current-menu-item > a, footer .menu-item a:hover {
+   color: white ;
+}
+
+a.excerpt-link:hover {
+    text-decoration: none;
+}
+
+/* ## header and footer menu  ==========================================================*/
+
+
+
+/* footer Contact-us form styles   ===================================================== */
+.contact-us-form-container input, .contact-us-form-container textarea {
+    background-color: #222222;
+    color:var(--content-text-color);
+   border: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+.contact-us-form-container .error-input{
+    border:1px solid pink;
+}
+.copyright-container{
+    background-color: var(--footer-copyright-bg-color);
+    color: var(--content-text-color) ;
+}
+/* ## footer Contact-us form styles  ===================================================== */
+

@@ -1,0 +1,25 @@
+/*
+  @Package: WordPress
+  @Sub package: sas-creative
+  @Version: 1.0.0
+  @Author: Jeevaka
+  @Description: Styles for 404 error code page
+*/
+
+.error-msg{
+    padding: 20px; 
+    margin: 40px auto; 
+}
+
+@media only screen and(max-width:768px){
+    .error-msg{ transform: scale(0.9);}  
+}
+
+/*Error code animation ================================================*/
+
+.errorCode{
+    transition: font-size 2s, color 2s;
+    font-size:1.15em;
+    color: red;
+    }
+

@@ -1,0 +1,38 @@
+/* Our Services style =================================================================== */
+#containerOurServices{
+}
+#containerOurServices .service-info-container {
+    background-color: white;
+    color: var(--content-text-color);
+    cursor: pointer;
+}
+
+#containerOurServices .service-info-container img {
+    max-width: 120px;
+    max-height: 120px;
+    width: 100%;
+    height: 100%;
+    transition: 1s filter, 1s background-color;
+    filter: grayscale(100%) blur(1px);
+
+}
+
+#containerOurServices .service-info-container:hover img {
+    filter: grayscale(0%) blur(0);
+}
+
+#containerOurServices .service-info-container:hover{
+    transition: background-color 1s, color 1s;
+    color: white !important;
+    background-color: var(--highlights-bg-and_text-color);
+
+}
+#containerOurServices .service-title{
+    color: black;
+}
+#containerOurServices .service-info-container:hover .service-title{
+    transition: color 1s;
+    color:white;
+}
+
+/* // Our Services style =================================================================== */
